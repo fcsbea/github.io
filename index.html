@@ -5,28 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freeman Consulting Solutions LLC</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <header>
+    <header class="bg-primary text-white text-center py-5">
         <h1>Freeman Consulting Solutions LLC</h1>
         <p>Your trusted partner in business consulting.</p>
     </header>
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service">
-            <h3>Business Strategy</h3>
-            <p>Helping you develop a winning strategy for your business.</p>
-        </div>
-        <div class="service">
-            <h3>Market Analysis</h3>
-            <p>Providing in-depth market analysis to guide your decisions.</p>
+    <section class="services container my-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="service p-4 border rounded">
+                    <h3>Business Strategy</h3>
+                    <p>Helping you develop a winning strategy for your business.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="service p-4 border rounded">
+                    <h3>Market Analysis</h3>
+                    <p>Providing in-depth market analysis to guide your decisions.</p>
+                </div>
+            </div>
         </div>
     </section>
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>Contact us at info@fcsbea.com</p>
     </footer>
+    <!-- jQuery and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
