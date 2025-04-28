@@ -1,5 +1,15 @@
-<body>
-    <h1>Welcome to Freeman Consulting Solutions LLC</h1>
-    <p>Your trusted partner in business consulting.</p>
-    <script src="scripts.js"></script>
-</body>
+// Example of adding a Bootstrap modal
+document.addEventListener('DOMContentLoaded', function() {
+    var modalButton = document.getElementById('modalButton');
+    var modal = new bootstrap.Modal(document.getElementById('exampleModal'));
+
+    modalButton.addEventListener('click', function() {
+        modal.show();
+    });
+});
+
+// Example of adding a Bootstrap tooltip
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+});
