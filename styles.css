@@ -1,47 +1,154 @@
 /* Custom styles for Freeman Consulting Solutions LLC */
+
+/* Global Styles */
 body {
-    background-image: url('background.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif!important;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
-header {
-    text-align: center;
-    padding: 50px 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+h1{
+    font-family: 'Roboto', sans-serif!important;
 }
 
-.services {
+.title-header{
+    background-color: white;
+    color: black;
+    margin-top: 50px !important;
+    margin-bottom: 25px !important;
+}
+
+.title-header2{
+    background-color: #333;
+    color: black;
+    margin-top:22px;
+}
+
+
+
+
+/* Header Styles */
+.header-gradient {
+    background: linear-gradient(90deg, #ffffff 0%, #004085 90%) !important;
+    min-height: 100px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
+}
+
+.header-container {
+    position: relative;
+}
+
+.logo-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 15px;
+}
+
+.logo-left img {
+    max-height: 80px;
+    width: auto;
+}
+
+header{
+    border-bottom: 1px solid lightgrey !important;
+}
+/* Navigation Styles */
+.navbar-light .nav-link {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-light .nav-link:hover {
+    color: #cccccc !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card-body {
+    min-height: 150px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Services and Card Styles */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-footer {
+    background-color: #004085 !important; /* Match header gradient blue */
+    border-top: none !important; /* Remove top border */
+    text-align: left; /* Left-align the button */
+    padding: 15px !important; /* Consistent padding */
+}
+
+.card-footer .btn {
+    background-color: #ffffff !important; /* White background */
+    color: #000000 !important; /* Black text */
+    border: none !important; /* Remove default border */
+}
+
+.card-footer .btn:hover {
+    background-color: #e0e0e0 !important; /* Light gray on hover */
+    color: #000000 !important; /* Keep black text */
+}
+
+/* Hero Section Styles */
+.hero-section {
     padding: 50px 0;
+    background-color: #f8f9fa; /* Light gray background for contrast */
 }
 
-.service {
-    background: rgba(255, 255, 255, 0.8);
+
+.hero-section:nth-child(even) {
+    background-color: #e9ecef; /* Slightly darker for alternating sections */
+}
+
+.hero-content {
     padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 30%;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .hero-content, .hero-image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .hero-section .row {
+        flex-direction: column;
+    }
+}
+
+/* Footer Styles */
 footer {
-    text-align: center;
+    text-align: left;
     padding: 20px 0;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
 }
 
-/* Additional Bootstrap customizations */
+/* Bootstrap Customizations */
 .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
@@ -52,13 +159,109 @@ footer {
     border-color: #004085;
 }
 
-.modal-content {
-    background-color: white;
-    border-radius: 5px;
-    padding: 20px;
+
+
+/* Style the #eric-freeman section */
+#eric-freeman {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text for all child elements */
 }
 
-.tooltip-inner {
-    background-color: #007bff;
-    color: white;
+/* Ensure text elements in #eric-freeman are white */
+#eric-freeman h2,
+#eric-freeman p {
+    color: #ffffff;
+}
+
+/* Optional: Enhance readability in #eric-freeman */
+#eric-freeman h2 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#eric-freeman p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Optional: Ensure image remains unaffected */
+#eric-freeman .hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* Style the jumbotron */
+/* Style the jumbotron */
+.jumbotron {
+    background-image: url('bg.png'); /* Background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    padding: 4rem 2rem; /* Generous padding */
+    margin-bottom: 2rem; /* Space below */
+    border-radius: 0.5rem; /* Rounded corners */
+    text-align: center; /* Center text */
+}
+
+/* Style jumbotron text */
+.jumbotron h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.jumbotron p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #333333; /* Dark text for readability */
+    max-width: 800px; /* Limit width for readability */
+    margin: 0 auto; /* Center paragraph */
+}
+
+
+.jumbotron p {
+    color: #000000; /* White text for contrast */
+}
+.jumbotron h1 {
+    color: #000000 !important; /* White text for contrast */
+}
+#why-us {
+    margin-top: 0px !important;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text for all child elements */
+}
+
+/* Ensure text elements are white */
+#why-us h2,
+#why-us h5,
+#why-us p {
+    color: #ffffff;
+}
+
+/* Style Font Awesome icons to be white */
+#why-us .fas {
+    color: #ffffff !important; /* Override Bootstrap's text-primary */
+}
+
+/* Optional: Ensure container and row maintain proper spacing */
+#why-us .container {
+    padding: 3rem 0; /* Match py-5 padding */
+}
+
+/* Optional: Improve contrast and readability */
+#why-us h2 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#why-us h5 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#why-us p {
+    font-size: 1rem;
+    line-height: 1.6;
 }

@@ -4,45 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freeman Consulting Solutions LLC</title>
-    <link rel="stylesheet" href="styles 1.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <header class="bg-dark text-white text-center py-5">
-        <h1>Freeman Consulting Solutions LLC</h1>
-        <p>Your trusted partner in business consulting.</p>
-    </header>
-    <section class="services container my-5">
-        <h2 class="text-center mb-4">Our Services</h2>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="service p-4 border rounded">
-                    <h3>Business Strategy</h3>
-                    <p>Helping you develop a winning strategy for your business.</p>
+<!-- Full-width header with smooth left-to-right gradient background and navigation -->
+<header class="header-gradient text-white text-center py-5" id="home">
+    <div class="container header-container">
+        <div class="logo-left">
+            <img src="logo.png" alt="Freeman Consulting Solutions LLC Logo">
+        </div>
+        <!-- Navigation Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
-                <div class="service p-4 border rounded">
-                    <h3>Market Analysis</h3>
-                    <p>Providing in-depth market analysis to guide your decisions.</p>
+        </nav>
+    </div>
+</header>
+
+<!-- Jumbotron Section -->
+<section class="jumbotron">
+    <div class="container">
+        <h1 class="display-4">Welcome to Freeman Consulting Solutions LLC</h1>
+        <p>Freeman Consulting Solutions LLC delivers enterprise-grade IT solutions, specializing in business strategy, market analysis, networking, hardware support, enterprise PC management, and equipment lifecycle optimization. Led by Eric Freeman, our team leverages decades of expertise to drive efficiency, security, and innovation for your business.</p>
+    </div>
+</section>
+
+<div class="container" >
+        <h2 class="title-header mb-4">Services</h2>
+</div>
+<!-- Services section -->
+<section class="services container my-5" id="services">
+
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="strategy.png" class="card-img-top" alt="Business Strategy">
+                <div class="card-body">
+                    <h3 class="card-title">Business Strategy</h3>
+                    <p class="card-text">Helping you develop a winning strategy for your business.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="services.html" class="btn">Learn More</a>
                 </div>
             </div>
         </div>
-        <!-- Button to trigger modal -->
-        <button id="modalButton" class="btn btn-primary" data-bs-toggle="tooltip" title="Click to learn more">Learn More</button>
-    </section>
-    <footer class="bg-dark text-white text-center py-3">
-        <p>Contact us at info@fcsbea.com</p>
-    </footer>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">More Information</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="market.png" class="card-img-top" alt="Market Analysis">
+                <div class="card-body">
+                    <h3 class="card-title">Market Analysis</h3>
+                    <p class="card-text">Providing in-depth market analysis to guide your decisions.</p>
                 </div>
-                <div class="modal-body">
-                    Here is more information about our services.
-                </div
+                <div class="card-footer">
+                    <a href="services.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="networking.png" class="card-img-top" alt="Networking Solutions">
+                <div class="card-body">
+                    <h3 class="card-title">Networking Solutions</h3>
+                    <p class="card-text">Designing and managing robust network infrastructures for seamless connectivity.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="services.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="hardware.png" class="card-img-top" alt="Hardware Support">
+                <div class="card-body">
+                    <h3 class="card-title">Hardware Support</h3>
+                    <p class="card-text">Providing installation, maintenance, and repair of IT hardware to keep your systems running.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="services.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="enterprise.png" class="card-img-top" alt="Enterprise PC Support">
+                <div class="card-body">
+                    <h3 class="card-title">Enterprise PC Support</h3>
+                    <p class="card-text">Offering comprehensive PC support for enterprise environments to ensure productivity.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="services.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="equipment.png" class="card-img-top" alt="Equipment Management">
+                <div class="card-body">
+                    <h3 class="card-title">Equipment Management</h3>
+                    <p class="card-text">Managing and optimizing IT equipment lifecycles for cost efficiency and performance.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="services.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hero Section: Eric Freeman (Professional Summary) -->
+<section class="hero-section" id="eric-freeman">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 hero-content">
+                <h2>Eric Freeman</h2>
+                <p>Eric Freeman is a seasoned Systems Engineering Manager with over two decades of experience in IT infrastructure, enterprise system deployment, and cloud architecture. He specializes in Microsoft-based environments, server optimization, and large-scale OS and application rollouts.</p>
+                <p>His expertise includes Active Directory, SCCM, SCVMM, and Hyper-V, with a strong track record in automation, disaster recovery, and cost-saving migrations. Eric is also an accomplished leader, known for mentoring teams and driving continuous improvement across enterprise-level IT operations.</p>
+            </div>
+            <div class="col-md-6 hero-image">
+                <img src="eric.jpeg" alt="Eric Freeman">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<div class="row">
+<section class="contact container my-5" id="contact">
+    <h2 class="mb-4">Contact Us</h2>
+    <p >Reach out to us at <a href="mailto:info@fcsbea.com">info@fcsbea.com</a> for inquiries.</p>
+</section>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>Contact us at info@fcsbea.com</p>
+    </div>
+</footer>
+
+<!-- Bootstrap 5 JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<!-- Enable smooth scrolling -->
+<script>
+    // Enable smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+</body>
+</html>
