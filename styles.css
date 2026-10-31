@@ -149,14 +149,17 @@ footer {
 }
 
 /* Bootstrap Customizations */
+/* Bootstrap 5.3 buttons read these variables. White on #0056b3 is 7.0:1
+   (#007bff was 3.98:1 and failed WCAG AA for normal-size text). */
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #004085;
+    --bs-btn-bg: #0056b3;
+    --bs-btn-border-color: #0056b3;
+    --bs-btn-hover-bg: #004085;
+    --bs-btn-hover-border-color: #004085;
+    --bs-btn-active-bg: #004085;
+    --bs-btn-active-border-color: #004085;
+    --bs-btn-disabled-bg: #0056b3;
+    --bs-btn-disabled-border-color: #0056b3;
 }
 
 
